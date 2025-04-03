@@ -1,0 +1,26 @@
+﻿@using murachmvc_portofolio.Models.Chapter1
+@model Module
+@{
+    ViewData["Title"] = "Product Detail";
+}
+<h1>Product Detail</h1>
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>ID</td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Rarity</td>
+        <td>@Model.Rarity</td>
+    </tr>
+    <tr>
+        <td>Socket</td>
+        <td>@Model.Socket</td>
+    </tr>
+</table>
+<a asp-controller="Home" asp-action="Chapter1"
+   class="btn btn-primary">Chapter1 List</a>
