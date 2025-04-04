@@ -1,0 +1,22 @@
+﻿@using murachmvc_portofolio.Models.Chapter2
+
+<form method="post">
+    <div class="mb-3">
+        <label  class="form-label">Modules</label>
+        <select name="id" asp-items="@(new SelectList(ViewBag.Modules, "Id", "Name"))"
+               class="form-select" ></select>
+    </div> 
+    <button type="submit">Click</button>
+
+</form>
+<br />
+@if (  ViewBag.Message!=null)
+{
+    <ul>
+        @foreach (var i in ViewBag.Message1)
+        {
+            <li>@i</li>
+        }
+    </ul>
+    <p>@ViewBag.Message</p>
+}
